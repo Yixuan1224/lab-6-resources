@@ -1,0 +1,28 @@
+:root {
+    --bs-primary-bg: #A85F42;
+    --bs-primary-fg: #A85F42;
+    --bs-primary-fg-emphasis: #87462F;
+    --bs-primary-border: #A85F42;
+    --bs-primary-focus-ring: #A85F42;
+    --bs-primary-contrast: #FFFFFF;
+}
+.btn-solid.theme-primary {
+    --bs-theme-bg: #A85F42;
+    --bs-theme-border: #A85F42;
+    --bs-theme-contrast: #FFFFFF;
+}
+body {
+    background-color: #FFF7EE;
+    color: #5C4033;
+}
+h1, h2, h3 {
+    color: #72422E;
+}
+.card {
+    background-color: #F5E6D3;
+    border-radius: 16px;
+}
+footer {
+    background-color: #EEDBC8;
+    color: #72422E;
+}

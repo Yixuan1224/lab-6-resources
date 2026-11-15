@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Creamy Bakery</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar md:navbar-expand bg-1 fg-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Creamy Bakery</a>
+            
+            <button class="btn-icon navbar-toggler" type="button"
+                data-bs-toggle="drawer" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="drawer-header">
+                    <h2 class="drawer-title" id="navbarNavLabel">Menu</h2>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+    
+    
+    <main class="container mt-5">
+        <h1 class="mb-4">Contact Us</h1>
+        <p>Have a question? Send us a message!</p>
+        <form>
+            <div class="row g-4">
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName">
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="example@email.com">
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="inquiryType" class="form-label">Inquiry Type</label>
+                        <select class="form-control" id="inquiryType" name="inquiryType">
+                            <option value="">Choose an option</option>
+                            <option value="order">Order Inquiry</option>
+                            <option value="product">Product Information</option>
+                            <option value="other">Other Questions</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-field">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-field">
+                        <input type="checkbox" class="check" id="consent" name="consent">
+                        <label for="consent">I agree to be contacted by Creamy Bakery.</label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn-solid theme-primary"> Submit</button>
+                </div>
+
+            </div>
+        </form>
+    </main>
+
+
+
+    <footer class="bg-1 text-center p-4 mt-5">
+        <p>© 2026 Creamy Bakery</p>
+    </footer>
+    
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
